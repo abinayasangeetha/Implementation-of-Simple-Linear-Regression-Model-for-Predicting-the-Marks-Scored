@@ -77,22 +77,29 @@ print("RMSE = ",rmse)
 ```
 
 ## Output:
-![ML21](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/c9b4e4b8-d079-416a-b87d-c348a17453b6)
+df.head()
+![ml1](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/a6a6342d-9a5c-4fe6-b230-e9a64ff48e89)
+df.tail()
+![ml2](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/e024bf5a-8e78-458e-a6ff-cff38dabbe60)
+Array value of X
+![ml3](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/ec9f4b6c-f932-4672-99b1-ccbb63eb75cf)
+Array value of Y
+![ml4](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/b045c04d-1325-477a-9150-7c384c821a5e)
 
-![ML22](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/2ec628e0-d2b2-4833-ab0d-8ecc910807ce)
+Values of Y prediction
+![ml5](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/50df8a52-21f6-4790-b09b-c9c4ab130b0c)
 
-![ML23](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/829bdef5-fbd0-4242-a07a-60ee1cfdcecc)
-![ML24](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/fec02645-27dd-4f0c-a2a2-8c3880bd69cb)
+Array values of Y test
+![ml6](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/eb5b4707-d801-452f-b296-b4be6c02a194)
 
-![ML25](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/d0d81c1b-30f5-4cfc-a6f7-379b36883417)
-#### Training and Testing set
-![ML26](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/d38af052-5fe6-4f49-969c-08fc8ab0c54a)
-![ML27](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/d04941d1-c6bc-42d3-80c5-e6f78fdc59bd)
-#### Values of MSE,MAE and RMSE
-![ML28](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/1d5b020d-0016-4880-a788-77072d15ad1f)
+Training and Testing set
+![ml7](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/351d34f7-5975-422d-9fc1-b07cdecbe62d)
+![ml8](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/c2661a45-9dd5-4b39-8ecb-a27a6cbe78e9)
 
-![ML29](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/4029b3d2-67ad-4acb-9551-31ccc82507c9)
 
-![ML30](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/9f5f78af-bec5-49a7-86ab-99bcafea889c)
+Values of MSE,MAE and RMSE
+![ml9](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/c076007b-3ea8-4b0f-867a-6361ce8c4049)
+
+
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
