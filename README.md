@@ -20,96 +20,46 @@ Program to implement the simple linear regression model for predicting the marks
 Developed by: ABINAYA S
 RegisterNumber:  212222230002
 */
+```
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-df = pd.read_csv('/content/student_scores.csv')
-df.head()
-
-#segregating data to variables
-x = df.iloc[:, :-1].values
-x
-
-#splitting train and test data
-y = df.iloc[:, -1].values
-y
-
+df=pd.read_csv('student.csv')
+df.head(10)
+plt.scatter(df['X'],df['Y'])
+plt.xlabel('X')
+plt.ylabel('Y')
+x=df.iloc[:,0:-1]
+y=df.iloc[:,-1]
 from sklearn.model_selection import train_test_split
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 1/3, random_state = 0)
-
-from sklearn.linear_model import LinearRegression 
-regressor=LinearRegression()
-regressor.fit(x_train,y_train)
-y_pred=regressor.predict(x_test)
-
-#displaying predicted values
-y_pred
-
-#displaying actual values
-y_test
-
-#graph plot for training data
-plt.scatter(x_train,y_train,color="orange")
-plt.plot(x_train,regressor.predict(x_train),color="red")
-plt.title("Hours vs Scores (Training Set)")
-plt.xlabel("Hours")
-plt.ylabel("Scores")
-plt.show()
-
-#graph plot for test data
-plt.scatter(x_test,y_test,color="purple")
-plt.plot(x_train,regressor.predict(x_train),color="green")
-plt.title("Hours vs Scores (Training Set)")
-plt.xlabel("Hours")
-plt.ylabel("Scores")
-plt.show()
-
-mse=mean_squared_error(y_test,y_pred)
-print("MSE= ",mse)
-
-mae=mean_absolute_error(y_test,y_pred)
-print("MAE = ",mae)
-
-rmse=np.sqrt(mse)
-print("RMSE = ",rmse)
+X_train,X_test,Y_train,Y_test=train_test_split(x,y,test_size=0.2,random_state=0)
+from sklearn.linear_model import LinearRegression
+lr=LinearRegression()
+lr.fit(X_train,Y_train)
+X_train
+Y_train
+lr.predict(x_test.iloc[0].values.reshape(1,1))
+plt.scatter(df['X'],df['Y'])
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.plot(X_train,lr.predict(X_train),color='orange')
+lr.coef_
+lr.intercept_
 
 ```
 
 ## Output:
-df.head()
-
-![ml1](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/a6a6342d-9a5c-4fe6-b230-e9a64ff48e89)
-
-df.tail()
-
-![ml2](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/e024bf5a-8e78-458e-a6ff-cff38dabbe60)
-
-Array value of X
-
-![ml3](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/ec9f4b6c-f932-4672-99b1-ccbb63eb75cf)
-
-Array value of Y
-
-![ml4](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/b045c04d-1325-477a-9150-7c384c821a5e)
-
-Values of Y prediction
-
-![ml5](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/50df8a52-21f6-4790-b09b-c9c4ab130b0c)
-
-Array values of Y test
-
-![ml6](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/eb5b4707-d801-452f-b296-b4be6c02a194)
-
-Training and Testing set
-
-![ml7](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/351d34f7-5975-422d-9fc1-b07cdecbe62d)
-
-![ml8](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/c2661a45-9dd5-4b39-8ecb-a27a6cbe78e9)
-
-Values of MSE,MAE and RMSE
-
-![ml9](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/c076007b-3ea8-4b0f-867a-6361ce8c4049)
+## 1)HEAD:
+![image](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/1af631da-608b-42f6-8fee-be4ddf3f6efa)
+## GRAPH OF PLOTTED DATA:
+![image](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/b64d7aea-ec3d-452f-8ffe-2ac5e0f82f4a)
+## TRAINED DATA:
+![image](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/5d83b9ed-e8e7-4aa9-90c6-8b5a9a40752b)
+## LINE OF REGRESSION:
+![image](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/b1bb8601-57d8-4a6e-9ae0-f60fef3b3100)
+## COEFFICIENT AND INTERCEPT VALUES:
+![image](https://github.com/abinayasangeetha/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393675/56041fcb-9309-49da-8f89-022e74c65c45)
 
 
 ## Result:
